@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\sinlut.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\charsprites.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_text.cpp">
+      <Filter>Source\GBA</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_sound.cpp">
+      <Filter>Source\GBA</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_mathUtil.cpp">
+      <Filter>Source\GBA</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_math.cpp">
+      <Filter>Source\GBA</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_input.cpp">
+      <Filter>Source\GBA</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_gfx.cpp">
+      <Filter>Source\GBA</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_drawing.cpp">
+      <Filter>Source\GBA</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MegaMan.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FG_Maps.c">
+      <Filter>Resource Files\FG</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FG_Palette.c">
+      <Filter>Resource Files\FG</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FG_Tiles.c">
+      <Filter>Resource Files\FG</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_Maps.c">
+      <Filter>Resource Files\BG</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_Palette.c">
+      <Filter>Resource Files\BG</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_Tiles.c">
+      <Filter>Resource Files\BG</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MegaManSpritesv2.c">
+      <Filter>Resource Files\MegaMan</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MegaManSprites.c">
+      <Filter>Resource Files\MegaMan</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Level.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_TilesTestLevel.c">
+      <Filter>Resource Files\BGTest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_CollisionsTestLevel.c">
+      <Filter>Resource Files\BGTest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_MapsTestLevel.c">
+      <Filter>Resource Files\BGTest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_PaletteTestLevel.c">
+      <Filter>Resource Files\BGTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Intellisense.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sinlut.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\charsprites.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_background.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_drawing.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_gfx.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_input.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_math.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_mathUtil.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_reg.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_sound.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_structs.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_text.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_types.h">
+      <Filter>Include\GBA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MegaMan.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FG_Externs.h">
+      <Filter>Resource Files\FG</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BG_Externs.h">
+      <Filter>Resource Files\BG</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MegaManSprites.h">
+      <Filter>Resource Files\MegaMan</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MegaManSpritesv2.h">
+      <Filter>Resource Files\MegaMan</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Level.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BG_ExternsTestLevel.h">
+      <Filter>Resource Files\BGTest</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+    <Text Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{be7015be-2245-4948-962d-0f70171bcf71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{1d6ed73f-abca-415a-8e82-9bbc82d5b9ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7888929f-a805-4a7a-9118-88e3328111fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\GBA">
+      <UniqueIdentifier>{64f5c127-ce59-421a-8a25-aa02a944e264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GBA">
+      <UniqueIdentifier>{dab633b8-d6e8-488e-a3cf-e66dd4c91f86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MegaMan">
+      <UniqueIdentifier>{a8238ed9-6502-4076-a29a-ca01eb7ac3d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\FG">
+      <UniqueIdentifier>{f5546c34-0210-484b-8bf6-c02b0367c28f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\BG">
+      <UniqueIdentifier>{cf933f73-70a2-4ab3-b9fc-4e5628e2dc5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\BGTest">
+      <UniqueIdentifier>{4a11fcb3-2106-42a2-9c30-8330e930acc8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

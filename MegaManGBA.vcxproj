@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9455764e-a2a6-4ce7-a999-29647d1ed927}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>$(ProjectName).elf</NMakeOutput>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make clean all</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>ARM7;WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(ProjectDir)include;$(DEVKITARM)\arm-none-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)include;$(DEVKITARM)\arm-none-eabi\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>make DEBUG=0</NMakeBuildCommandLine>
+    <NMakeOutput>$(ProjectName).gba</NMakeOutput>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make clean all</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>ARM7;WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(ProjectDir)include;$(DEVKITARM)\arm-none-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)include;$(DEVKITARM)\arm-none-eabi\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\BG_CollisionsTestLevel.c" />
+    <ClCompile Include="source\BG_Maps.c" />
+    <ClCompile Include="source\BG_MapsTestLevel.c" />
+    <ClCompile Include="source\BG_Palette.c" />
+    <ClCompile Include="source\BG_PaletteTestLevel.c" />
+    <ClCompile Include="source\BG_Tiles.c" />
+    <ClCompile Include="source\BG_TilesTestLevel.c" />
+    <ClCompile Include="source\charsprites.c" />
+    <ClCompile Include="source\FG_Maps.c" />
+    <ClCompile Include="source\FG_Palette.c" />
+    <ClCompile Include="source\FG_Tiles.c" />
+    <ClCompile Include="source\gba_drawing.cpp" />
+    <ClCompile Include="source\gba_gfx.cpp" />
+    <ClCompile Include="source\gba_input.cpp" />
+    <ClCompile Include="source\gba_math.cpp" />
+    <ClCompile Include="source\gba_mathUtil.cpp" />
+    <ClCompile Include="source\gba_sound.cpp" />
+    <ClCompile Include="source\gba_text.cpp" />
+    <ClCompile Include="source\Level.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\MegaMan.cpp" />
+    <ClCompile Include="source\MegaManSprites.c" />
+    <ClCompile Include="source\MegaManSpritesv2.c" />
+    <ClCompile Include="source\sinlut.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BG_Externs.h" />
+    <ClInclude Include="include\BG_ExternsTestLevel.h" />
+    <ClInclude Include="include\charsprites.h" />
+    <ClInclude Include="include\FG_Externs.h" />
+    <ClInclude Include="include\gba.h" />
+    <ClInclude Include="include\gba_background.h" />
+    <ClInclude Include="include\gba_drawing.h" />
+    <ClInclude Include="include\gba_gfx.h" />
+    <ClInclude Include="include\gba_input.h" />
+    <ClInclude Include="include\gba_math.h" />
+    <ClInclude Include="include\gba_mathUtil.h" />
+    <ClInclude Include="include\gba_reg.h" />
+    <ClInclude Include="include\gba_sound.h" />
+    <ClInclude Include="include\gba_structs.h" />
+    <ClInclude Include="include\gba_text.h" />
+    <ClInclude Include="include\gba_types.h" />
+    <ClInclude Include="include\Intellisense.h" />
+    <ClInclude Include="include\Level.h" />
+    <ClInclude Include="include\MegaMan.h" />
+    <ClInclude Include="include\MegaManSprites.h" />
+    <ClInclude Include="include\MegaManSpritesv2.h" />
+    <ClInclude Include="include\sinlut.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Makefile">
+      <FileType>Document</FileType>
+    </Text>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

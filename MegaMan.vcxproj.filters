@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FG_Tiles.c">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_Maps.c">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_Palette.c">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BG_Tiles.c">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FG_Maps.c">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FG_Palette.c">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_mathUtil.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_sound.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_math.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_input.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_gfx.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_drawing.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gba_text.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\sinlut.h" />
+    <ClInclude Include="include\BG_Externs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FG_Externs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_background.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_drawing.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_gfx.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_input.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_math.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_mathUtil.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_reg.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_sound.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_structs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_text.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gba_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Intellisense.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+    <Text Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{0ad3577f-445c-4be6-a8e4-b218ffee9f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{c95f737b-f1dd-45cf-bd90-af4e84825401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{26e97ab8-8fb8-4244-aa02-8586cd4709f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

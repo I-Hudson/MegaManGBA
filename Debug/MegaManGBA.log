@@ -1,0 +1,45 @@
+﻿  main.cpp
+  arm-none-eabi-g++ -MMD -MP -MF /c/MegaManGBA/build/main.d -g -Wall -O3 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -mthumb -mthumb-interwork -iquote /c/MegaManGBA/include -I/c/devkitPro/libgba/include -I/c/MegaManGBA/build -fno-rtti -fno-exceptions -c /c/MegaManGBA/source/main.cpp -o main.o 
+  C:/MegaManGBA/source/main.cpp:13: warning: ignoring #pragma region Print [-Wunknown-pragmas]
+   #pragma region Print to console
+   
+  C:/MegaManGBA/source/main.cpp:80: warning: ignoring #pragma endregion  [-Wunknown-pragmas]
+   #pragma endregion
+   
+  C:/MegaManGBA/source/main.cpp: In function 'void delay(unsigned int)':
+C:/MegaManGBA/source/main.cpp(84,20): warning G2890A887: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+    for (int i = 0; i < a_amount * 10; i++);
+                    ~~^~~~~~~~~~~~~~~
+  C:/MegaManGBA/source/main.cpp: In function 'void Print(const char*)':
+C:/MegaManGBA/source/main.cpp(33,9): warning GB12388F7: 'char* strncpy(char*, const char*, size_t)' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+    strncpy(nocash_buffer, a_message, stringLen);
+    ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  C:/MegaManGBA/source/main.cpp:32:24: note: length computed here
+    int stringLen = strlen(a_message);
+                    ~~~~~~^~~~~~~~~~~
+  C:/MegaManGBA/source/main.cpp: In function 'void Print(std::__cxx11::string)':
+C:/MegaManGBA/source/main.cpp(46,9): warning GB12388F7: 'char* strncpy(char*, const char*, size_t)' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+    strncpy(nocash_buffer, output, stringLen);
+    ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  C:/MegaManGBA/source/main.cpp:45:24: note: length computed here
+    int stringLen = strlen(output);
+                    ~~~~~~^~~~~~~~
+  C:/MegaManGBA/source/main.cpp: In function 'void Print(int)':
+C:/MegaManGBA/source/main.cpp(61,9): warning GB12388F7: 'char* strncpy(char*, const char*, size_t)' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+    strncpy(nocash_buffer, output, stringLen);
+    ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  C:/MegaManGBA/source/main.cpp:60:24: note: length computed here
+    int stringLen = strlen(output);
+                    ~~~~~~^~~~~~~~
+  C:/MegaManGBA/source/main.cpp: In function 'void Print(fixed)':
+C:/MegaManGBA/source/main.cpp(76,9): warning GB12388F7: 'char* strncpy(char*, const char*, size_t)' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+    strncpy(nocash_buffer, output, stringLen);
+    ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  C:/MegaManGBA/source/main.cpp:75:24: note: length computed here
+    int stringLen = strlen(output);
+                    ~~~~~~^~~~~~~~
+  linking cartridge
+  c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/lib/thumb\libstdc++.a(locale_init.o): in function `(anonymous namespace)::get_locale_mutex()':
+(.text._ZN12_GLOBAL__N_116get_locale_mutexEv+0x6) : warning : legacy compatible __sync_synchronize used. Not suitable for multi-threaded applications
+  built ... MegaManGBA.gba
+  ROM fixed!
